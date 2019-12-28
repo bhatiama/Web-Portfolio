@@ -21,8 +21,30 @@
   }
 
   p {
-    i:nth-child(1), i:nth-child(2) {
+
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    i:nth-child(1),
+    i:nth-child(2) {
       padding-right: 3em;
+    }
+
+    i.fa-facebook:hover {
+      color: #4267B2;
+    }
+
+    i.fa-instagram:hover {
+      background: -webkit-linear-gradient(#405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+      background-clip:text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    i.fa-linkedin:hover {
+      color: #2867B2;
     }
   }
 
@@ -39,27 +61,32 @@
 @keyframes vibrate-2 {
   0% {
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
+
   20% {
     -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
   }
+
   40% {
     -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
   }
+
   60% {
     -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
   }
+
   80% {
     -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
   }
+
   100% {
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
