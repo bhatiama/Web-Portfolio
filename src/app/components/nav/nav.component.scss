@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+
+.navbar {
+  margin-top: 2rem;
+
+  .navbar-brand:hover {
+    transform: matrix(1, 0, 0, 1, 0, 0)
+  }
+
+  .navbar-collapse {
+    flex-direction: row-reverse;
+  }
+
+  .nav-link {
+    letter-spacing: 2px;
+    font-weight: lighter;
+  }
+}
+
+.navbar-brand {
+  font-family: "Satisfy";
+  font-weight: lighter;
+  font-size: 30px;
+  text-transform: lowercase;
+}
