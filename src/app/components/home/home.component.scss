@@ -15,9 +15,10 @@
   color: white;
 
   p:first-child {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
-    max-width: 80%;
+    max-width: 100%;
+    padding-top: 2em;
   }
 
   p {
@@ -28,7 +29,8 @@
     }
 
     i:nth-child(1),
-    i:nth-child(2) {
+    i:nth-child(2),
+    i:nth-child(3) {
       padding-right: 3em;
     }
 
@@ -45,6 +47,10 @@
 
     i.fa-linkedin:hover {
       color: #2867B2;
+    }
+
+    i.fa-github:hover {
+      color: #6e5494;
     }
   }
 
