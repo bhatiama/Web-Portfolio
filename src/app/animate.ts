@@ -8,11 +8,10 @@ export let fadeEarly = trigger('fadeEarly', [
 ]);
 
 export let introPara = trigger('introPara', [
-  state('void', style({ opacity: 0, transform: 'translateX(-50px)' })),
   transition(':enter, :leave', [
-    group([
-      animate('3000ms ease-in-out', style({ opacity: 1 })),
-      animate('3000ms ease-in-out', style({ transform: 'translateX(0)' }))
-    ])
+    query('.intro', style({ opacity: 0, transform: 'translateX(-150px)' })),
+      query('.intro', stagger(200, [
+        animate('2000ms ease-in-out', style({ opacity: 1,  transform: 'translateX(0)' }))
+      ]))
   ])
 ]);
