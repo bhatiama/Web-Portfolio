@@ -8,6 +8,8 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
     NavComponent,
     HomeComponent,
     AboutComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
