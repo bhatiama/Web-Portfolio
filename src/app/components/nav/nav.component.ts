@@ -22,6 +22,17 @@ export class NavComponent implements OnInit {
     element.addEventListener('mouseleave', function() {
       this.classList.remove('animated', 'jello', 'ease-in');
     });
+
+    const nav = document.querySelectorAll('.nav-item');
+    for(let i=0; i<nav.length; i++){
+        nav[i].addEventListener('click', function() {
+          const act = document.querySelectorAll('.active');
+          for(let j = 0; j<act.length; j++ ){
+            act[j].classList.remove('active');
+          }
+          this.classList.add('active');
+        });
+    }
   }
 
 }
