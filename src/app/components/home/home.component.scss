@@ -10,6 +10,7 @@
 .tagline {
   display: block;
   margin: auto;
+  padding-left: 20px;
   padding-top: 3em;
   font-size: 20px;
   color: white;
@@ -26,6 +27,10 @@
     a {
       text-decoration: none;
       color: #FFFFFF;
+    }
+
+    .portfolio {
+      margin-left:30px;
     }
 
     i:nth-child(1),
