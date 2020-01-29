@@ -1,9 +1,17 @@
-::ng-deep .ngx-charts {
-  text {
-    fill: #fff !important;
-  }
+h4 {
+color: #ffffff;
+padding-bottom: 10px;
+padding-top:20px;
 }
 
-.skills {
-  margin: auto;
+.skill {
+  padding-bottom: 10px;
+
+  span {
+    font-weight: bold;
+  }
+
+  .progress {
+    margin-bottom: 10px;
+  }
 }

@@ -15,3 +15,12 @@ export let introPara = trigger('introPara', [
       ]))
   ])
 ]);
+
+export let skillsAnimate = trigger('skillsAnimate', [
+    transition(':enter, :leave', [
+      query('.skillFade', style({ opacity: 0, transform: 'translateX(-30px)' })),
+      query('.skillFade', stagger(50, [
+        animate('1000ms ease-in-out', style({ opacity: 1, transform: 'translateX(0)' }))
+      ]))
+    ])
+]);

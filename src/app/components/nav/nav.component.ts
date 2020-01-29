@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeEarly } from 'src/app/animate';
+import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -12,7 +14,7 @@ import { fadeEarly } from 'src/app/animate';
 
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(location: Location, private router: Router) { }
 
   ngOnInit() {
     const element = document.querySelector('.navbar-brand');
