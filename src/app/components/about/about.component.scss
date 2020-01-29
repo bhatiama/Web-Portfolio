@@ -14,3 +14,19 @@
     margin: 2em auto;
   }
 }
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)  {
+
+    .about-us {
+      p {
+        font-size: 18px;
+        text-align: left;
+        line-height: 2em;
+        width: 100%;
+        margin: 1em auto;
+      }
+    }
+
+}
