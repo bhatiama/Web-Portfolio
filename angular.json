@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./src/styles.scss"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
@@ -96,7 +96,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./src/styles.scss"
             ],
             "scripts": [
             ]
