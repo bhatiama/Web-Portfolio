@@ -1,0 +1,55 @@
+form {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.contact-details {
+  border-right: 2px solid #ffffff;
+}
+
+.contact-list {
+  display: block;
+  margin: auto;
+  width: 80%;
+
+  li {
+    font-size: 20px;
+    padding: 2.5em 0;
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    a:hover {
+      text-decoration: underline #ffffff dashed;
+    }
+
+    .fas {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 10px;
+    }
+  }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px)  {
+    .contact-details {
+      padding-bottom: 2em;
+      border-bottom: 2px solid #ffffff;
+      border-right: none;
+    }
+
+    .contact-list {
+      margin-left: 0;
+
+      li {
+        font-size: 16px;
+        padding-left: 10px;
+      }
+    }
+
+  }

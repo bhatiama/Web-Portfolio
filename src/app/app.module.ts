@@ -11,6 +11,7 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { SkillsComponent } from './components/skills/skills.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     AboutComponent,
     ExperiencesComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

@@ -17,7 +17,13 @@
   }
 
   .card-link {
-    margin-bottom: 0px;
+    font-size: 20px;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .card-link:hover {
+    color: #6e5494 !important;
   }
 }
 

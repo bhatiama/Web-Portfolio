@@ -24,3 +24,12 @@ export let skillsAnimate = trigger('skillsAnimate', [
       ]))
     ])
 ]);
+
+export let projectsAnimate = trigger('projectsAnimate', [
+  transition(':enter, :leave', [
+    query('.projectFade', style({ opacity: 0, transform: 'translateX(-30px)' })),
+    query('.projectFade', stagger(600, [
+      animate('1000ms ease-in-out', style({ opacity: 1, transform: 'translateX(0)' }))
+    ]))
+  ])
+]);

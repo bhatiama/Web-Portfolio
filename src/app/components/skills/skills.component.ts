@@ -20,6 +20,7 @@ export class SkillsComponent implements OnInit {
     for (let i = 0; i < span.length; i++) {
       span[i].classList.add('skillFade');
     }
+    // tslint:disable-next-line: prefer-for-of
     for (let i = 0; i < progress.length; i++) {
       progress[i].classList.add('skillFade');
     }

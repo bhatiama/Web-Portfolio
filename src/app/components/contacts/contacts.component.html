@@ -1,0 +1,28 @@
+<div class="row" [@skillsAnimate]=animate.length>
+  <div class="col-md-6 contact-details">
+    <form name="contact" action="#" method="POST">
+      <legend class="skillFade">Let's get in touch</legend>
+      <div class="form-group">
+        <label for="name" class="skillFade">Name</label>
+        <input type="text" class="form-control skillFade" id="name" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="skillFade">Email address</label>
+        <input type="email" class="form-control skillFade" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+        <small id="emailHelp" class="form-text text-muted skillFade">I'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="textarea" class="skillFade">Message</label>
+        <textarea class="form-control skillFade" id="textarea" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-secondary skillFade">Submit</button>
+    </form>
+  </div>
+  <div class="col-md-6">
+    <ul class="contact-list list-group" type="none">
+      <li class="item skillFade"><i class="fas fa-at"></i> <a href="mailto:bhatia.ma@husky.neu.edu"> bhatia.ma@husky.neu.edu</a></li>
+      <li class="item skillFade"><i class="fas fa-phone"></i> <a href="tel:+18572694052"> +1 857-269-4052</a></li>
+      <li class="item skillFade"><i class="fas fa-map-marked-alt"></i> Boston, Massachusetts</li>
+    </ul>
+  </div>
+</div>
