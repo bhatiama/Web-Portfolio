@@ -1,4 +1,8 @@
 .card {
   color: #000000;
   margin: 2em auto;
+
+  .card-body{
+    background-color: rgba($color: #eaeaea, $alpha: 1.0);
+  }
 }
