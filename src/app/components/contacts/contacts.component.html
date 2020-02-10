@@ -1,19 +1,19 @@
 <div class="row" [@skillsAnimate]=animate.length>
   <div class="col-md-6 contact-details">
-    <form name="contact" action="#" method="POST">
+    <form name="contact" method="POST" data-netlify="true">
       <legend class="skillFade">Let's get in touch</legend>
       <div class="form-group">
         <label for="name" class="skillFade">Name</label>
-        <input type="text" class="form-control skillFade" id="name" placeholder="Full Name" required>
+        <input type="text" name="name" class="form-control skillFade" id="name" placeholder="Full Name" required>
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1" class="skillFade">Email address</label>
-        <input type="email" class="form-control skillFade" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+        <input type="email" name="email" class="form-control skillFade" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
         <small id="emailHelp" class="form-text text-muted skillFade">I'll never share your email with anyone else.</small>
       </div>
       <div class="form-group">
         <label for="textarea" class="skillFade">Message</label>
-        <textarea class="form-control skillFade" id="textarea" rows="3"></textarea>
+        <textarea class="form-control skillFade" name="message" id="textarea" rows="3"></textarea>
       </div>
       <button type="submit" class="btn btn-secondary skillFade">Submit</button>
     </form>
