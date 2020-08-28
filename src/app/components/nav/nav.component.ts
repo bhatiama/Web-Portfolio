@@ -18,16 +18,18 @@ export class NavComponent implements OnInit {
 
   ngOnInit() {
     const element = document.querySelector('.navbar-brand');
-    element.addEventListener('mouseenter', function () {
+    element.addEventListener('mouseenter', function() {
       this.classList.add('animated', 'jello', 'ease-in');
     });
-    element.addEventListener('mouseleave', function () {
+    element.addEventListener('mouseleave', function() {
       this.classList.remove('animated', 'jello', 'ease-in');
     });
 
     const nav = document.querySelectorAll('.nav-item');
     const path = location.pathname.split('/');
-
+    if (path[1] === '') {
+      path[1] = 'home';
+    }
     const act = document.querySelectorAll('.active');
     // tslint:disable-next-line: prefer-for-of
     for (let j = 0; j < act.length; j++) {
@@ -43,13 +45,17 @@ export class NavComponent implements OnInit {
 
     // tslint:disable-next-line: prefer-for-of
     for (let i = 0; i < nav.length; i++) {
-      nav[i].addEventListener('click', function () {
+      nav[i].addEventListener('click', function() {
         const active = document.querySelectorAll('.active');
         // tslint:disable-next-line: prefer-for-of
         for (let j = 0; j < active.length; j++) {
           active[j].classList.remove('active');
         }
         this.classList.add('active');
+        const btn = document.getElementById('nav-toggle');
+        if (window.getComputedStyle(btn).display !== 'none') {
+            btn.click();
+        }
       });
     }
   }
