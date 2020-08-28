@@ -51,7 +51,6 @@ export class NavComponent implements OnInit {
         }
         this.classList.add('active');
       });
-      console.log(location.pathname.split('/'));
     }
   }
 
