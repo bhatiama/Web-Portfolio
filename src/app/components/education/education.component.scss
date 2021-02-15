@@ -173,27 +173,9 @@
 
 .main-timeline .description {
   margin-bottom: 0;
-  padding-inline-start: 6px;
   word-break: break-word;
   color: #eaeaea;
-
-  li{
-    padding-top: 10px;
-  }
 }
-
-// .main-timeline .timeline:nth-child(2n) .date-content {
-//   float: right
-// }
-
-// .main-timeline .timeline:nth-child(2n) .date-content:before {
-//   left: 10px
-// }
-
-// .main-timeline .timeline:nth-child(2n) .timeline-content {
-//   padding: 20px 50px 20px 0;
-//   text-align: right
-// }
 
 @media only screen and (max-width: 991px) {
   .main-timeline .icon {

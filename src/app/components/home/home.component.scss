@@ -5,6 +5,7 @@
   img {
     width: 80%;
   }
+
 }
 
 .tagline {
@@ -15,11 +16,16 @@
   font-size: 20px;
   color: white;
 
+  h4.about-us {
+    color: #ffffff;
+  }
+
   p:first-child {
     font-size: 30px;
     font-weight: bold;
     max-width: 100%;
     padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   p {
